@@ -7,10 +7,29 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers;
 
-class ProductoController extends Controller
+class ProductosController extends Controller
 {
+    //index
     public function index()
     {
-    	return "Probando controller index";
+    	return "hello world";
+    }
+
+
+     public function destroy()
+    {
+    	return "Borrar";
+    }
+
+
+     public function update()
+    {
+    	return "Actualizar";
+    }
+    
+
+     public function store()
+    {
+    	return "Guardar";
     }
 }

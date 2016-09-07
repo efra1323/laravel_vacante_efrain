@@ -4,19 +4,19 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateVacanteTableCompra extends Migration
+class TableCompras extends Migration
 {
-    /**
+   /**
      * Run the migrations.
      *
      * @return void
      */
     public function up()
     {
-        Schema::create('compra', function (Blueprint $table) {
-            $table->increments('id', 10);
+        Schema::create('compras', function (Blueprint $table) {
+            $table->increments('id');
             $table->double('total',30);
-            $table->date('fecha'10);
+            $table->date('fecha',10);
         });
     }
 
@@ -27,6 +27,6 @@ class CreateVacanteTableCompra extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('compra');
+        Schema::dropIfExists('compras');
     }
 }

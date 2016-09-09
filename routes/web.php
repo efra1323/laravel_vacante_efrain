@@ -11,3 +11,4 @@ Route::post('/productos', 'ProductosController@store');
 Route::put('/productos', 'ProductosController@update');
 Route::delete('/productos', 'ProductosController@destroy');
 Route::get('/productos', 'ProductosController@index');
+
